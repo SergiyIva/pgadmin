@@ -1,0 +1,15 @@
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_LISTEN_PORT=${PORT}
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - "127.0.0.1:${PORT}:${PORT}"
+
+volumes:
+  pgadmin:
