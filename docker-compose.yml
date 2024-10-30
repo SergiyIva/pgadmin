@@ -9,7 +9,7 @@ services:
     volumes:
       - pgadmin:/var/lib/pgadmin
     ports:
-      - "127.0.0.1:${PORT}:${PORT}"
+      - "${PORT}:${PORT}"
     networks:
       - dokploy-network
 
