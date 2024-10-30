@@ -10,6 +10,12 @@ services:
       - pgadmin:/var/lib/pgadmin
     ports:
       - "127.0.0.1:${PORT}:${PORT}"
+    networks:
+      - dokploy-network
 
 volumes:
   pgadmin:
+
+networks:
+  dokploy-network:
+    external: true
