@@ -11,10 +11,10 @@ services:
     ports:
       - "${PORT}:${PORT}"
     networks:
-      - pg-network
+      - pgadmin
 
 networks:
-  pg-network:
+  pgadmin:
     driver: bridge
 
 volumes:
