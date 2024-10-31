@@ -11,11 +11,11 @@ services:
     ports:
       - "${PORT}:${PORT}"
     networks:
-      - pgadmin
+      - dokploy-network
 
 networks:
-  pgadmin:
-    driver: bridge
+  dokploy-network:
+    external: true
 
 volumes:
   pgadmin:
