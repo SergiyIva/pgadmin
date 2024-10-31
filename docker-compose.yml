@@ -18,4 +18,3 @@ volumes:
 
 networks:
   pg-network:
-    external: true
