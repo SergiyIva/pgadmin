@@ -15,6 +15,7 @@ services:
 
 networks:
   pg-network:
+    driver: bridge
 
 volumes:
   pgadmin:
