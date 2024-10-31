@@ -13,8 +13,8 @@ services:
     networks:
       - pg-network
 
-volumes:
-  pgadmin:
-
 networks:
   pg-network:
+
+volumes:
+  pgadmin:
