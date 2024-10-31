@@ -11,11 +11,11 @@ services:
     ports:
       - "${PORT}:${PORT}"
     networks:
-      - dokploy-network
+      - pg-network1
 
 volumes:
   pgadmin:
 
 networks:
-  dokploy-network:
+  pg-network:
     external: true
